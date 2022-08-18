@@ -1,6 +1,7 @@
 function receivesAFunction(callback){
      callback();
 }
+receivesAFunction(()=> {return sum})
 
 function returnsANamedFunction(){
      return function lookToday (){
@@ -9,9 +10,8 @@ function returnsANamedFunction(){
 }
 
 function returnsAnAnonymousFunction(){
-     return function (){
-          console.log("Days of the week");
+     return () => console.log("Days of the week");
      }
 
     
-}
+
